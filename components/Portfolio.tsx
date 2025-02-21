@@ -400,7 +400,7 @@ export default function Portfolio() {
             </section>
 
             {/* Awards & Honors */}
-            <section id="awards" className="scroll-mt-20">
+            <section id="awards & honors" className="scroll-mt-20">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Awards & Honors
               </h2>
