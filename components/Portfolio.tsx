@@ -59,7 +59,7 @@ export default function Portfolio() {
           <div className="md:hidden border-t bg-white">
             <div className="container mx-auto px-4 py-2">
               <div className="flex flex-col space-y-2">
-                {["About", "Research", "Teaching", "Awards"].map((section) => (
+                {["About", "Research", "Teaching", "Awards & Honors"].map((section) => (
                   <button
                     key={section}
                     onClick={() => scrollToSection(section.toLowerCase())}
