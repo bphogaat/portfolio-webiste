@@ -15,12 +15,34 @@ import Image from "next/image";
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  /**
+   * Scroll to a specific section on the page
+   */
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
+  };
+
+  /**
+   * Handles clicks on the navigation items.
+   * - If it's "CV", open an external link.
+   * - Otherwise, scroll to the corresponding section.
+   */
+  const handleNavClick = (section: string) => {
+    if (section.toLowerCase() === "cv") {
+      // Open the Dropbox CV in a new tab
+      window.open(
+        "https://www.dropbox.com/scl/fi/k5xmjvjux38exawsn2ovh/BhavnaPhogaat_CV.pdf?rlkey=fvuk2gixcswq1emplpa9bd72j&e=1&st=pgctxl08&dl=0",
+        "_blank"
+      );
+      setIsMenuOpen(false);
+    } else {
+      // For About/Research/Teaching/Awards & Honors
+      scrollToSection(section.toLowerCase());
+    }
   };
 
   return (
@@ -41,15 +63,17 @@ export default function Portfolio() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
-              {["About", "Research", "Teaching", "Awards & Honors"].map((section) => (
-                <button
-                  key={section}
-                  onClick={() => scrollToSection(section.toLowerCase())}
-                  className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
-                >
-                  {section}
-                </button>
-              ))}
+              {["About", "Research", "Teaching", "Awards & Honors", "CV"].map(
+                (section) => (
+                  <button
+                    key={section}
+                    onClick={() => handleNavClick(section)}
+                    className="text-gray-600 hover:text-gray-900 font-medium transition-colors"
+                  >
+                    {section}
+                  </button>
+                )
+              )}
             </nav>
           </div>
         </div>
@@ -59,15 +83,17 @@ export default function Portfolio() {
           <div className="md:hidden border-t bg-white">
             <div className="container mx-auto px-4 py-2">
               <div className="flex flex-col space-y-2">
-                {["About", "Research", "Teaching", "Awards & Honors"].map((section) => (
-                  <button
-                    key={section}
-                    onClick={() => scrollToSection(section.toLowerCase())}
-                    className="text-left py-2 text-gray-600 hover:text-gray-900 font-medium transition-colors"
-                  >
-                    {section}
-                  </button>
-                ))}
+                {["About", "Research", "Teaching", "Awards & Honors", "CV"].map(
+                  (section) => (
+                    <button
+                      key={section}
+                      onClick={() => handleNavClick(section)}
+                      className="text-left py-2 text-gray-600 hover:text-gray-900 font-medium transition-colors"
+                    >
+                      {section}
+                    </button>
+                  )
+                )}
               </div>
             </div>
           </div>
