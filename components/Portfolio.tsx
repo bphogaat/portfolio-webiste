@@ -41,7 +41,7 @@ export default function Portfolio() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
-              {["About", "Research", "Teaching", "Awards"].map((section) => (
+              {["About", "Research", "Teaching", "Awards & Honors"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section.toLowerCase())}
