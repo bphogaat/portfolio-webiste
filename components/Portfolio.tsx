@@ -308,10 +308,7 @@ export default function Portfolio() {
                       <p className="font-medium text-gray-900">
                         Principles of Marketing Research (Undergraduate)
                       </p>
-                      <p className="text-gray-600 mt-1">Term: Fall 2023</p>
-                      <p className="text-gray-600 mt-1">
-                        Instructor Ratings: 4.33/5
-                      </p>
+                      <p className="text-gray-600 mt-1">Term: Fall 2023</p>                      
                     </div>
                   </div>
                 </div>
