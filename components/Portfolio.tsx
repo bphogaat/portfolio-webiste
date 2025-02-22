@@ -6,6 +6,7 @@ import {
   Linkedin,
   BookOpen,
   GraduationCap,
+  Book,
   Menu,
   X,
   Download,
@@ -419,6 +420,39 @@ export default function Portfolio() {
                     </li>
                   </ul>
                 </div>
+                
+                {/* Teaching Interests */}
+                <div className="bg-gray-50 p-6 rounded-xl">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Teaching Interests
+                  </h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <span>Marketing Research / Analytics</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <span>
+                        Digital Marketing </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <span>
+                        Social Media Analytics</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <span>Marketing Management</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <span>Global / International Marketing</span>
+                    </li>
+                  </ul>
+                </div>
+
+                
               </div>
             </section>
 
