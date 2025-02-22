@@ -428,25 +428,25 @@ export default function Portfolio() {
                   </h3>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-start gap-2">
-                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <BookOpen className="mt-1 flex-shrink-0" size={16} />
                       <span>Marketing Research / Analytics</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <BookOpen className="mt-1 flex-shrink-0" size={16} />
                       <span>
                         Digital Marketing </span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <BookOpen className="mt-1 flex-shrink-0" size={16} />
                       <span>
                         Social Media Analytics</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <BookOpen className="mt-1 flex-shrink-0" size={16} />
                       <span>Marketing Management</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Book className="mt-1 flex-shrink-0" size={16} />
+                      <BookOpen className="mt-1 flex-shrink-0" size={16} />
                       <span>Global / International Marketing</span>
                     </li>
                   </ul>
