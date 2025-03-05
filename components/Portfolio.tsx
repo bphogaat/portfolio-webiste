@@ -11,6 +11,7 @@ export default function Portfolio() {
           name="description"
           content="Bhavna Phogaat is a Ph.D. candidate in Marketing at the Darla Moore School of Business, University of South Carolina. Explore research, teaching, and publications."
         />
+        <meta name="google-site-verification" content="eNMR8_C6V9coaT8Iw8eJGG5Z8ikWSQxSQeijIsS4nI4" />
         <link rel="canonical" href="https://bhavnaphogaat.vercel.app" />
       </Head>
       <div className="min-h-screen bg-white">
