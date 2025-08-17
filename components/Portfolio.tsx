@@ -216,7 +216,7 @@ export default function Portfolio() {
                     </h3>
                     <ul className="list-disc list-inside text-gray-600 space-y-1">
                       <li>
-                        Unintended Consequences of Ban on Vaping Products.
+                        Spillover Effect of Ban on Vaping Products.
                       </li>
                       <li>Regulatory Changes and Customer Response.</li>
                     </ul>
@@ -336,7 +336,10 @@ export default function Portfolio() {
                     </h3>
                     <ul className="space-y-2 text-gray-600">
                       <li className="flex items-start gap-2">
-                        <span>Marketing Research / Analytics</span>
+                        <span>Marketing Research</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span>Marketing Analytics</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span>Digital Marketing</span>
@@ -364,7 +367,7 @@ export default function Portfolio() {
                   <ul className="space-y-4">
                     <li className="flex items-start gap-2">
                       <span className="text-gray-600">
-                        Haring Symposium Fellow, Presenter (upcoming), Indiana
+                        Haring Symposium Fellow, Presenter, Indiana
                         University (April 2025)
                       </span>
                     </li>
